@@ -77,12 +77,59 @@
 
         <!--Баннер после шапки-->
         <section class="section hero">
+
             <!--container of section hero  -->
             <div class="container hero">
 
                 <h1 class="hero-title"> эффективные решения для вашего бизнеса </h1>
 
-                <a href="" class="button"> Заказать услугу </a>
+                <button class="button" data-modal-open> Заказать услугу </button>
+
+                    <div class="backdrop is-hidden" data-modal>
+
+                        <div class="modal" >
+
+                            <form class="form"  autocomplete="on">
+
+                                <p>Оставьте свои данные, мы вам перезвоним</p>
+
+                                
+
+                                <div role="group">
+
+                                    <div class="form-field">
+                                        <label for="name"> Имя </label>
+                                        <input type="text" name="user-name" id="name">
+                                    </div>
+                                    
+                                    <div class="form-field">
+                                        <label for="tel"> Телефон </label>
+                                        <input type="tel" name="user-telefone" id="tel">
+                                    </div>
+                                   
+                                    <div class="form-field">
+                                        <label for="email"> Почта </label>
+                                        <input type="email" name="user-email" id="email">
+                                    </div>
+                                    
+                                                                     
+                                    
+                                    <textarea class="comment" name="comment" id="comment"  rows="10" placeholder="Комментарий"></textarea>
+                                    
+                                    <div class="checkbox">
+                                        <input type="checkbox" name="" value="check" id="check">
+                                        <label for="check" class="label-text"> Соглашаюсь с рассылкой и принимаю Условия договора </label>
+                                    </div>
+
+                                </div>
+
+                                <button class="button" data-modal-close> Закрыть </button>
+
+                            </form>
+
+                        </div>
+
+                    </div>
 
             </div>
 
@@ -631,6 +678,7 @@
 
     </main>
 
+
     <!--Футер-->
     <footer class="footer">
 
@@ -745,6 +793,8 @@
         </div>
 
     </footer>
+
+  <script src="./js/modal.js"></script>
 
 </body>
 
