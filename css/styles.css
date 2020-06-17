@@ -798,18 +798,30 @@ textarea {
 }
 
 .button-portfolio-li {
+
+	padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+	line-height: 1.6;
+	
+    color: var(--primary-text-color);
+    background: #f5f4fa;
+    border-radius: 4px;
+    border-color: transparent;
+    letter-spacing: 0.03em;
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
 	background: #f5f4fa;
 	border-radius: 4px;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	padding-right: 22px;
-	padding-left: 22px;
+	
 	cursor: pointer;
 }
 
 .button-portfolio-li:hover,
 .button-portfolio-li:focus {
-	color: var(--accent-color);
+	background-color: var(--accent-color);
+	
 }
 
 .button-text {
@@ -822,7 +834,7 @@ textarea {
 }
 .button-portfolio-li:hover .button-text,
 .button-portfolio-li:focus .button-text {
-	color: var(--accent-color);
+	color: white;
 }
 
 /* css for portfolio */
