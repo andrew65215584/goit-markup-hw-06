@@ -4,17 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW5</title>
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">  
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/contacts.css" />
 
 </head>
 
 <body>
 
-    <!--Шапка сайта-->
-    <header>
+     
+     <!--Шапка сайта-->
+    <header class="portfolio-header">
         <!--container of header  -->
         <div class="container container-site-nav">
 
@@ -26,9 +27,9 @@
                 <!-- Навигационное меню шапки -->
                 <ul class="item-nav">
 
-                    <li class="item-nav-li"> <a href="./index.html"     class="link current "> Студия </a> </li>
-                    <li class="item-nav-li"> <a href="./portfolio.html" class="link "> Портфолио </a> </li>
-                    <li class="item-nav-li"> <a href="./contacts.html" class="link "> Контакты </a> </li>
+                    <li class="item-nav-li"> <a href="./index.html"     class="link "> Студия </a> </li>
+                    <li class="item-nav-li"> <a href="./portfolio.html" class="link  "> Портфолио </a> </li>
+                    <li class="item-nav-li"> <a href="./contacts.html" class="link  current "> Контакты </a> </li>
 
                 </ul>
 
@@ -36,33 +37,44 @@
 
 
                 <!-- Телефон и емейл в шапке -->
-                <ul class="contacts-display list ">
-                    <!-- имейл -->
-                    <li class="contacts-display-li">
+           
+            
+
+            <ul class="contacts">
+
+                <li class="contacts-item">
+
+                    <a href=" " class="contacts-link">
+
+                        <span> info@maol.com</span>
 
                         <svg class="svg-item-envelop">
 
                             <use href="./images/symb.svg#icon-envelope"> </use>
 
                         </svg>
+                    </a>
 
-                        <a href="mailto:info@devstudio.com" class="contacts contacts-email">info@devstudio.com</a>
+                </li>
 
-                    </li>
-                    <!-- телефон -->
-                    <li class="contacts-display-li">
+                <li class="contacts-item" >
 
-                        <svg class="svg-item-telephone">
+                     <a href=" "  class="contacts-link" >
 
-                            <use href="./images/symb.svg#icon-telephone" class="svg-link"> </use>
+                        <span> info@maol.com</span>
+
+                        <svg class="svg-item-envelop">
+
+                            <use href="./images/symb.svg#icon-envelope"> </use>
 
                         </svg>
+                         
+                    </a>
 
-                        <a href="tel:+380961111111" class="contacts contacts-telephone"> +38 096 111 11 11 </a>
+                </li>
 
-                    </li>
 
-                </ul>
+            </ul>
 
 
 
@@ -70,119 +82,11 @@
 
 
     </header>
-
-
+    
     <!--Main-->
     <main>
 
-        <!--Баннер после шапки-->
-        <section class="section hero">
-
-            <!--container of section hero  -->
-            <div class="container hero">
-
-                <h1 class="hero-title"> эффективные решения для вашего бизнеса </h1>
-
-                <button class="button" data-modal-open> Заказать услугу </button>
-
-                    <div class="backdrop is-hidden" data-modal>
-
-                        
-                        <div class="modal" >
-
-                            <button class="close-modal-button " data-modal-close >
-
-                                <svg class="close-icon"  width="11" height="11" >
-                                            
-                                    <use href="./images/symb.svg#icon-close"> </use> 
-                                    
-                                </svg>
-                                
-                            </button>
-
-
-                            <form class="form"  autocomplete="on">
-
-                                <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
-                               
-
-                                <div role="group">
-
-                                    <div class="form-field">
-                                        
-                                        <input type="text" name="user-name" id="name" class="form-input" placeholder=" " >
-                                        <label for="name" class="label-title"> Имя </label>
-
-                                        <svg class="modal-svg" width="18" height="18" >
-                                            
-                                            <use href="./images/symb.svg#icon-person-modal"> </use> 
-                                            
-                                        </svg>
-
-                                    </div>
-                                    
-                                    <div class="form-field">
-                                        
-                                        <input type="tel" name="user-telefone" id="tel" class="form-input" placeholder=" ">
-                                        <label for="tel" class="label-title"> Телефон </label>
-                                        <svg class="modal-svg" width="18" height="18" >
-                                            
-                                            <use href="./images/symb.svg#icon-phone-modal"> </use> 
-                                            
-                                        </svg>
-
-                                    </div>
-                                   
-                                    <div class="form-field">
-                                        
-                                        <input type="email" name="user-email" id="email" class="form-input" placeholder=" ">
-                                        <label for="email" class="label-title" > Почта </label>
-                                        <svg class="modal-svg" width="18" height="18" >
-                                            
-                                           <use href="./images/symb.svg#icon-email-modal"> </use> 
-                                            
-                                        </svg>
-
-                                    </div>
-                                    
-                                    <textarea class="comment" name="comment" id="comment"  rows="10" placeholder="Комментарий"></textarea>
-                                    
-
-                                    <div class="checkbox-container">
-                                        
-                                        
-
-                                        <label  class="check-box-text">
-
-                                            <input class="checkbox" type="checkbox" name="" value="check" name="Policy" value="Policy" >
-                                            
-                                            <span class="checkbox-icon" > </span>
-
-                                                                                        
-                                           <span> Соглашаюсь с рассылкой и принимаю  <a href="">  Условия договора </a> </span> 
-                                            
-                                        </label>
-                                        
-                                        
-
-                                    </div>
-
-                                </div>
-
-                                <button class="button" data-modal-close> Отправить </button>
-
-                            </form>
-
-
-                        </div>
-                       
-
-
-                    </div>
-
-            </div>
-
-        </section>
+        
 
 
         <!--Выгоды от сотрудничества-->
@@ -191,76 +95,83 @@
 
             <div class="container section-benefits">
 
-                <h2 class="section-title"> Выгоды от сотрудничества </h2>
+             
 
-                <ul class="benefits">
+                <ul class="advantages-list">
 
-                <li class="benefits-list">
+                    <li class="advantages-item">
 
-                    <div class="benefits-list-image">
+                        <div class="advantages-image">
                         
-                        <svg class="svg-item-benefits" width="70" height="70" >
+                            <svg class="advantages-svg" width="70" height="70" >
 
-                            <use href="./images/symb.svg#icon-benefits_0"> </use>
+                                <use href="./images/symb.svg#icon-benefits_1"> </use>
 
-                        </svg>
+                            </svg>
+
+                        </div>  
+
+
+                        <h3 class="advantages-title"> Пунктуальность </h3>
+                        <p class="advantages-text" > Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p>
+
+                    </li>
+
+                    <li class="advantages-item">
+
+                        <div class="advantages-image">
+                        
+                            <svg class="advantages-svg" width="70" height="70" >
+
+                                <use href="./images/symb.svg#icon-benefits_1"> </use>
+
+                            </svg>
+
+                        </div>  
+
+
+                        <h3 class="advantages-title"> Пунктуальность </h3>
+                        <p class="advantages-text" > Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p>
+
+                    </li>
+
+                    <li class="advantages-item">
+
+                        <div class="advantages-image">
+                        
+                            <svg class="advantages-svg" width="70" height="70" >
+
+                                <use href="./images/symb.svg#icon-benefits_1"> </use>
+
+                            </svg>
+
+                        </div>  
+
+
+                        <h3 class="advantages-title"> Пунктуальность </h3>
+                        <p class="advantages-text" > Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p>
+
+                    </li>
+
+                    <li class="advantages-item">
+
+                        <div class="advantages-image">
+                        
+                            <svg class="advantages-svg" width="70" height="70" >
+
+                                <use href="./images/symb.svg#icon-benefits_1"> </use>
+
+                            </svg>
+
+                        </div>  
+
+
+                        <h3 class="advantages-title"> Пунктуальность </h3>
+                        <p class="advantages-text" > Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p>
+
+                    </li>
+
                     
-                    </div>
-
-                    <h3 class="benefits-title"> Внимание к деталям </h3>
-                    <p class="text"> Идейные соображения, а также начало повседневной работы по формированию позиции. </p>
-
-                </li>
-
-                <li class="benefits-list">
-
-                    <div class="benefits-list-image">
-                        
-                        <svg class="svg-item-benefits" width="70" height="70" >
-
-                            <use href="./images/symb.svg#icon-benefits_1"> </use>
-
-                        </svg>
-
-                    </div>  
-                    <h3 class="benefits-title"> Пунктуальность </h3>
-                    <p class="text" > Задача организации, в особенности же рамки и место обучения кадров влечет за собой. </p>
-
-                </li>
-
-                <li class="benefits-list">
-
-                    <div class="benefits-list-image">
-                        
-                        <svg class="svg-item-benefits" width="70" height="70" >
-
-                            <use href="./images/symb.svg#icon-benefits_2"> </use>
-
-                        </svg>    
-                    
-                    </div> 
-
-                    <h3 class="benefits-title" > Планирование </h3>
-                    <p class="text" > Равным образом консультация с широким активом в значительной степени обуславливает. </p>
-
-                </li>
-
-                <li class="benefits-list">
-
-                    <div class="benefits-list-image"> 
-
-                        <svg class="svg-item-benefits" width="70" height="70" >
-
-                            <use href="./images/symb.svg#icon-benefits_3"> </use>
-
-                        </svg>
-
-
-                    </div> 
-
-                    <h3 class="benefits-title" > Современные технологии  </h3>
-                    <p class="text " > Значимость этих проблем настолько очевидна, что реализация плановых заданий. </p>
-                </li>
 
                 </ul>
 
@@ -270,45 +181,7 @@
         </section>
 
 
-        <!--Чем мы занимаемся-->
-        <section class="section section-our-work">
-
-            <div class="container">
-
-                <h2 class="section-title"> Чем мы занимаемся </h2>
-
-                <ul class="about-our-work-ul">
-
-
-                    <li class="about-our-work-li">
-
-                        <img src="./images/img_1.jpg" alt="Первая картинка в выгодах" width="370" height="294">
-                        <h3 class="works-title"> Десктопные приложения </h3>
-
-                    </li>
-
-                    <li class="about-our-work-li" >
-
-                        <img src="./images/img_2.jpg" alt="Вторая картинка в выгодах" width="370" height="294">
-                        <h3 class="works-title" > Мобильные приложения </h3>
-
-                    </li>
-
-                    <li class="about-our-work-li" >
-
-                        <img src="./images/img_3.jpg" alt="Третья картинка в выгодах" width="370" height="294">
-                        <h3 class="works-title" > Дизайнерские решения </h3>
-
-                    </li>
-
-
-                </ul>
-
-            </div>
-
-        </section>
-
-
+    
         <!--Наша команда-->
         <section class="section our-team">
 
@@ -855,7 +728,7 @@
 
     </footer>
 
-  <script src="./js/modal.js"></script>
+
 
 </body>
 
