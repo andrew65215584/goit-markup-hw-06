@@ -248,7 +248,7 @@ textarea {
 .section.hero {
 	text-align: center;
 	min-height: 600px;
-	max-width: 1600px;
+	max-width: 1920px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: var(--secondary-background-color);
@@ -256,9 +256,10 @@ textarea {
 	background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)),
 		url(../images/header-background.jpg);
 
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -444,7 +445,7 @@ textarea {
 
 .checkbox:checked ~ .checkbox-icon {
 	background-color: #2196f3;
-	background-image: url(/images/icon-check.svg);
+	background-image: url(../images/icon-check.svg);
 	background-size: contain;
 	background-origin: border-box;
 	border-color: var(--accent-color);
