@@ -336,12 +336,22 @@ textarea {
 	cursor: pointer;
 }
 
+.close-modal-button:hover .close-icon {
+	fill: var(--accent-color);
+}
+
+.icon-close {
+	fill: black ;
+}
+
 .modal-svg {
 	position: absolute;
 	top: 50%;
 	left: 16px;
 	transform: translateY(-50%);
 }
+
+
 
 .modal .modal-text {
 	font-weight: 700;
