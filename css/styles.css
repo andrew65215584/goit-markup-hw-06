@@ -119,6 +119,7 @@ textarea {
 .item-nav .link:hover,
 .item-nav .link:focus {
 	color: var(--accent-color);
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-nav .link {
@@ -131,6 +132,7 @@ textarea {
 	padding-top: 32px;
 	padding-bottom: 32px;
 	display: inline-block;
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.current::after {
@@ -167,9 +169,9 @@ textarea {
 }
 
 .contacts,
-.svg-item-telephone,
+.svg.svg-item-telephone,
 .svg-item-envelop {
-	transition-duration: 500ms;
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-display-li:nth-child(2) {
@@ -259,7 +261,7 @@ textarea {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	
+
 	padding-top: 200px;
 	padding-bottom: 200px;
 }
@@ -341,7 +343,7 @@ textarea {
 }
 
 .icon-close {
-	fill: black ;
+	fill: black;
 }
 
 .modal-svg {
@@ -350,8 +352,6 @@ textarea {
 	left: 16px;
 	transform: translateY(-50%);
 }
-
-
 
 .modal .modal-text {
 	font-weight: 700;
@@ -667,18 +667,21 @@ textarea {
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-links {
 	fill: #afb1b8;
-	transition-duration: 500ms;
+	transition-duration: 500ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 
 .social-links:hover {
 	background-color: var(--accent-color);
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links:hover .svg-item-social {
 	fill: var(--background-color);
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link-li {
@@ -720,12 +723,12 @@ textarea {
 	height: 90px;
 	border: 1px solid #afb1b8;
 	border-radius: 4px;
-	transition-duration: 500ms;
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .svg-item-clients {
 	fill: #afb1b8;
-	transition-duration: 500ms;
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-usual-client-li:focus .svg-item-clients,
@@ -783,9 +786,7 @@ textarea {
 	letter-spacing: 0.03em;
 }
 
-.footer-go-it {
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
+
 
 .main-logo {
 	color: #ffffff;
@@ -831,6 +832,11 @@ textarea {
 	margin-bottom: 20px;
 }
 
+.social-add {
+	background: rgba(255, 255, 255, 0.1);
+	fill: #ffffff;
+}
+
 .call-to-action-footer .call-to-action-list-flex {
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -840,14 +846,7 @@ textarea {
 	margin-bottom: 0px;
 }
 
-.footer-go-it-text {
-	text-align: center;
-	margin: 0px;
-	padding-bottom: 20px;
-	padding-top: 18px;
 
-	color: rgba(255, 255, 255, 0.4);
-}
 
 /* button */
 .button {
@@ -989,6 +988,7 @@ textarea {
 	list-style: none;
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .example .link {
@@ -1034,7 +1034,8 @@ textarea {
 	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.example:hover .card-content {
+.example:hover  {
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
 	box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
@@ -1065,10 +1066,3 @@ textarea {
 	border-radius: 5px 5px 0px 0px;
 	display: block;
 }
-
-
-
-
-
-
-
