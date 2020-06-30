@@ -477,6 +477,11 @@ textarea {
 .checkbox {
 	margin-bottom: 30px;
 }
+
+.modal-button {
+	margin-left: auto;
+	margin-right: auto;
+}
 /* Section benefits  */
 
 .benefits {
@@ -861,6 +866,10 @@ textarea {
 
 .call-to-action-footer .subscript-footer .button {
 	margin-bottom: 0px;
+}
+
+.telegram-footer {
+	margin-left: 10px;
 }
 
 /* button */
