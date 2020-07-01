@@ -294,7 +294,20 @@ textarea {
 
 /* Backdrop and modal */
 
+
+.backdrop-row {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
+}
+
+
+
 .backdrop {
+	
 	position: fixed;
 	z-index: 200;
 	top: 0;
@@ -304,47 +317,47 @@ textarea {
 	background-color: rgb(49, 48, 46, 0.5);
 
 	
+	
+	transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
 	opacity: 1;
-	transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .backdrop.is-hidden {
 	pointer-events: none;
 	
+
+	
+	transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s;
 	opacity: 0;
-	transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
+
+
+
+
+
 .modal {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-
-	transform: translate(-50%, -50%) scale(1);
-	
-	transition: translate(2000ms cubic-bezier(0.4, 0, 0.2, 1) 3000ms) scale(2000ms cubic-bezier(0.4, 0, 0.2, 1) 5000ms)
-	
-
-
-
-
+	position: relative;
+	margin: auto;
+    
 	height: 581px;
 	width: 528px;
 	padding: 40px;
-	margin-top: auto;
-	margin-bottom: auto;
+		
 
 	background: #ffffff;
 	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 	border-radius: 4px;
-
-
 	
+	transition:  transform .4s cubic-bezier(0.4, 0, 0.2, 1) 0s  ;
+	transform: translateY(0);
 }
 
-.backdrop.is-hidden .modal {
-	transform: translate(+50%, +50%) scale(0.5);
-	transition: translate(2000ms cubic-bezier(0.4, 0, 0.2, 1) 3000ms) scale(2000ms cubic-bezier(0.4, 0, 0.2, 1) 5000ms);
+.is-hidden .modal {
+
+	transition: transform .4s cubic-bezier(0.4, 0, 0.2, 1) 0.8s  ;
+	
+	transform: translateY(-150%);
 }
 
 
