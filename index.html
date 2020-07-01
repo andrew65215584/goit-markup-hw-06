@@ -40,25 +40,38 @@
                     <!-- имейл -->
                     <li class="contacts-display-li">
 
-                        <svg class="svg-item-envelop">
+                        
 
-                            <use href="./images/symb.svg#icon-envelope"> </use>
+                        <a href="mailto:info@devstudio.com" class="contacts contacts-email">
+                            <svg class="svg-item-envelop">
 
-                        </svg>
+                                <use href="./images/symb.svg#icon-envelope"> </use>
 
-                        <a href="mailto:info@devstudio.com" class="contacts contacts-email">info@devstudio.com</a>
+                            </svg>
+                            
+                            <span>   info@devstudio.com </span>
+                           
+                        
+                        </a>
 
                     </li>
                     <!-- телефон -->
                     <li class="contacts-display-li">
 
-                        <svg class="svg-item-telephone">
+                        
 
-                            <use href="./images/symb.svg#icon-telephone" class="svg-link"> </use>
+                        <a href="tel:+380961111111" class="contacts contacts-telephone">
 
-                        </svg>
+                            <svg class="svg-item-telephone">
 
-                        <a href="tel:+380961111111" class="contacts contacts-telephone"> +38 096 111 11 11 </a>
+                                <use href="./images/symb.svg#icon-telephone" class="svg-link"> </use>
+
+                            </svg>
+                            
+                            <span> +38 096 111 11 11  </span>
+                            
+                        
+                        </a>
 
                     </li>
 
@@ -762,11 +775,10 @@
 
     </footer>
     <div class="backdrop is-hidden" data-modal>
+             
+        <div class="modal" >
 
-                        
-                        <div class="modal" >
-
-                            <button class="close-modal-button " data-modal-close >
+            <button class="close-modal-button " data-modal-close >
 
                                 <svg class="close-icon"  width="11" height="11" >
                                             
@@ -774,10 +786,10 @@
                                     
                                 </svg>
                                 
-                            </button>
+            </button>
 
 
-                            <form class="form"  autocomplete="off">
+            <form class="form"  autocomplete="off">
 
                                 <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
                                
@@ -847,14 +859,12 @@
 
                                 <button class="button modal-button" data-modal-close> Отправить </button>
 
-                            </form>
+            </form>
 
 
-                        </div>
+        </div>
                        
-
-
-                    </div>
+    </div>
 
   <script src="./js/modal.js"></script>
 
